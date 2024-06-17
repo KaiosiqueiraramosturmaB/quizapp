@@ -10,3 +10,15 @@ botaoTema.addEventListener("click", () => {
 })
 
 verificarTema(body, botaoTema)
+
+const botoesAssunto = document.querySelectorAll(".assuntos button")
+botoesAssunto.forEach(boatao => {
+    boatao.addEventListener("click", selecionarAssunto)
+})
+
+function selecionarAssunto(evento) {
+    const assunto = evento.target.innerText
+    console.log(assunto)
+    localStorage.setItem("assunto", assunto)
+    window.location.href = "./pages/quiz/quiz.html"
+}
