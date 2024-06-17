@@ -88,7 +88,6 @@ header {
     font-size: 18px;
     font-weight: 500;
     color: var(--primary-text-color);
-
 }
 
 .tema {
@@ -152,7 +151,6 @@ main {
 
 .barra_progresso {
     height: 100%;
-    width: 60%;
     background: var(--purple);
     border-radius: 999px;
 }
